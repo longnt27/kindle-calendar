@@ -1,0 +1,1159 @@
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36772)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36774)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36776)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36778)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36780)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36782)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36784)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36786)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36788)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36790)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36792)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36794)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36798)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36800)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36802)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36804)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36806)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36808)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36810)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36812)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36814)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36816)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36818)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36820)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36822)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36824)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36826)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36828)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36830)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36832)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36834)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36836)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36838)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36840)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36842)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36844)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36846)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36848)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36850)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36852)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.100', 63333)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36854)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36856)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36858)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36860)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36862)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 63375)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36864)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36866)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36868)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36870)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36872)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36874)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36876)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36878)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36880)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36882)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36884)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36886)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36888)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.59.101', 36890)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 140, in do_GET
+    image = draw_clock() if path.startswith("/clock") else draw_calendar(viewed_month=viewed_month)
+  File "/Users/tlng/projects/kindle-calendar/server.py", line 99, in draw_calendar
+    draw.rectangle((x0, y0, x1, y1), outline=gray if active else pale, width=2)
+NameError: name 'gray' is not defined
+----------------------------------------

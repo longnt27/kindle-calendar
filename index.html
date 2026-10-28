@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kindle Calendar</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f1f1ee; color: #111; font: 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { max-width: 1240px; margin: 0 auto; padding: 28px; }
+    header { display: flex; justify-content: space-between; align-items: end; gap: 20px; border-bottom: 3px solid; padding-bottom: 18px; }
+    .eyebrow { margin: 0 0 6px; font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(34px, 5vw, 58px); line-height: 1; }
+    .subtitle { margin: 9px 0 0; color: #555; }
+    .nav { display: flex; gap: 8px; }
+    button, .preview { border: 2px solid #111; background: white; color: #111; border-radius: 6px; font: inherit; font-weight: 700; padding: 10px 14px; cursor: pointer; text-decoration: none; }
+    button:hover, .preview:hover { background: #111; color: white; }
+    button:focus-visible, input:focus-visible, .preview:focus-visible { outline: 3px solid #777; outline-offset: 3px; }
+    .layout { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(290px, 1fr); gap: 20px; margin-top: 24px; }
+    .calendar, aside { background: white; border: 2px solid #111; border-radius: 10px; padding: 20px; }
+    .weekdays, .days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+    .weekdays { margin-bottom: 8px; text-align: center; font-size: 13px; font-weight: 800; }
+    .days { gap: 4px; }
+    .day { min-height: 100px; border: 1px solid #bbb; border-radius: 4px; padding: 8px; font-weight: 700; }
+    .day.other { color: #bbb; background: #fafafa; }
+    .day.today { color: white; background: #111; border-color: #111; }
+    .day.selected { outline: 3px solid #111; outline-offset: -4px; }
+    .days button.day { color: inherit; background: white; border: 1px solid #bbb; border-radius: 4px; text-align: left; font: inherit; cursor: pointer; }
+    .days button.day.other { color: #bbb; background: #fafafa; }
+    .days button.day.today { color: white; background: #111; }
+    .days button.day.today:not(.selected) { color: #111; background: white; outline: 3px solid #888; outline-offset: -5px; }
+    .days button.day.selected { color: white; background: #111; }
+    .dots { display: block; margin-top: 10px; font-size: 21px; line-height: 1; }
+    .feed { border-top: 2px solid #ddd; margin-top: 16px; padding-top: 20px; }
+    .feed form { display: flex; flex-wrap: wrap; gap: 10px; }
+    .feed form label, .feed form input { flex-basis: 100%; }
+    .feed button { width: fit-content; }
+    #feed-remove { background: white; color: #111; }
+    .feed a { color: inherit; }
+    #day-events { list-style: none; padding: 0; margin: 8px 0 20px; }
+    #day-events li { border-bottom: 1px solid #ddd; padding: 8px 0; }
+    #day-events strong { display: block; font-size: 13px; color: #555; }
+    aside h2 { font-size: 28px; margin: 0 0 6px; }
+    aside p { color: #555; margin: 0 0 22px; }
+    form { display: grid; gap: 10px; }
+    label { font-size: 13px; font-weight: 800; }
+    input { width: 100%; padding: 12px; border: 1px solid #888; border-radius: 5px; font: inherit; }
+    form button { background: #111; color: white; }
+    .projects form { display: flex; border: 0; padding: 0; }
+    .projects form input { min-width: 0; }
+    #project-status { display: block; margin-top: 8px; }
+    #projects { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 16px 0; }
+    #projects:empty { display: none; }
+    #projects li { list-style: none; }
+    .project-pill { border-radius: 6px; padding: 5px 14px; }
+    .preview { display: inline-block; font-size: 14px; }
+    .previews { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    @media (max-width: 800px) { main { padding: 16px; } header { align-items: start; flex-direction: column; } .layout { grid-template-columns: 1fr; } .calendar, aside { padding: 12px; } .day { min-height: 65px; padding: 5px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div><p class="eyebrow">Desk display</p><h1 id="title">Calendar</h1><p class="subtitle" id="today"></p></div>
+    <nav class="nav" aria-label="Month navigation">
+      <button id="prev" type="button" aria-label="Previous month">←</button>
+      <button id="current" type="button">Today</button>
+      <button id="next" type="button" aria-label="Next month">→</button>
+    </nav>
+  </header>
+  <div class="layout">
+    <section class="calendar" aria-label="Month calendar">
+      <div class="weekdays"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+      <div class="days" id="days"></div>
+    </section>
+    <aside>
+      <section aria-label="Selected day events">
+        <h2 id="selected-heading">Selected day</h2>
+        <ul id="day-events"></ul>
+      </section>
+      <section class="projects" aria-label="Current projects">
+        <h2>Working on</h2><p>Shown as pills below the date on the Kindle clock.</p>
+        <form id="project-form">
+          <input id="project-name" type="text" maxlength="30" placeholder="Project name" aria-label="Project name" required>
+          <button type="submit">Add</button>
+        </form>
+        <span id="project-status" role="status"></span>
+        <ul id="projects"></ul>
+      </section>
+      <section class="feed" aria-label="Google Calendar connection">
+        <h2>Google Calendar</h2>
+        <p>Read only. Paste your <a href="https://support.google.com/calendar/answer/37648" target="_blank" rel="noopener">private iCal link</a>.</p>
+        <form id="feed-form">
+          <label for="feed-url">Private iCal address</label>
+          <input id="feed-url" type="url" placeholder="https://calendar.google.com/calendar/ical/…" required autocomplete="off">
+          <button type="submit">Connect</button>
+          <button id="feed-remove" type="button" hidden>Disconnect</button>
+        </form>
+        <p id="feed-status" role="status"></p>
+      </section>
+    </aside>
+  </div>
+  <footer class="previews" aria-label="Kindle previews">
+    <a class="preview" href="/preview.png" target="_blank" rel="noopener">Calendar preview ↗</a>
+    <a class="preview" id="week-preview" href="/preview.png?view=week" target="_blank" rel="noopener">Week preview ↗</a>
+    <a class="preview" href="/clock-preview.png" target="_blank" rel="noopener">Clock preview ↗</a>
+  </footer>
+</main>
+<script>
+  const now = new Date();
+  let view = new Date(now.getFullYear(), now.getMonth(), 1);
+  let selected = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  let projects = [];
+  let events = {};
+  const dateKey = d => [d.getFullYear(), String(d.getMonth() + 1).padStart(2, '0'), String(d.getDate()).padStart(2, '0')].join('-');
+
+  function render() {
+    document.getElementById('title').textContent = view.toLocaleDateString(undefined, {month: 'long', year: 'numeric'});
+    document.querySelector('.preview').href = '/preview.png?month=' + dateKey(view).slice(0, 7) + '&day=' + dateKey(selected);
+    document.getElementById('week-preview').href = '/preview.png?view=week&day=' + dateKey(selected);
+    document.getElementById('today').textContent = 'Today is ' + now.toLocaleDateString(undefined, {weekday: 'long', month: 'long', day: 'numeric'});
+    const days = document.getElementById('days');
+    days.replaceChildren();
+    const start = new Date(view.getFullYear(), view.getMonth(), 1 - view.getDay());
+    for (let i = 0; i < 42; i++) {
+      const day = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
+      const key = dateKey(day);
+      const cell = document.createElement('button'); cell.type = 'button';
+      cell.className = 'day' + (day.getMonth() !== view.getMonth() ? ' other' : '') +
+        (key === dateKey(now) ? ' today' : '') + (key === dateKey(selected) ? ' selected' : '');
+      cell.setAttribute('aria-label', day.toLocaleDateString(undefined, {weekday: 'long', month: 'long', day: 'numeric'}) + ', ' + (events[key]?.length || 0) + ' events');
+      cell.onclick = () => {
+        selected = day;
+        if (day.getMonth() !== view.getMonth()) { view = new Date(day.getFullYear(), day.getMonth(), 1); loadEvents(); }
+        else render();
+      };
+      cell.textContent = day.getDate();
+      if (events[key]?.length) {
+        const dot = document.createElement('span'); dot.className = 'dots';
+        dot.textContent = '●'.repeat(Math.min(events[key].length, 16)) + (events[key].length > 16 ? '+' : '');
+        cell.appendChild(dot);
+      }
+      days.appendChild(cell);
+    }
+    document.getElementById('selected-heading').textContent = selected.toLocaleDateString(undefined, {weekday: 'long', month: 'long', day: 'numeric'});
+    const dayEvents = document.getElementById('day-events'); dayEvents.replaceChildren();
+    for (const item of events[dateKey(selected)] || []) {
+      const row = document.createElement('li');
+      const time = document.createElement('strong'); time.textContent = item.time;
+      row.append(time, document.createTextNode(item.title)); dayEvents.appendChild(row);
+    }
+    if (!dayEvents.children.length) { const row = document.createElement('li'); row.textContent = 'No events'; dayEvents.appendChild(row); }
+  }
+
+  async function loadEvents() {
+    const first = dateKey(view);
+    const end = dateKey(new Date(view.getFullYear(), view.getMonth() + 1, 1));
+    const response = await fetch('/api/calendar/events?start=' + first + '&end=' + end);
+    if (!response.ok) throw Error();
+    const result = await response.json();
+    events = result.days;
+    document.getElementById('feed-status').textContent = result.error ||
+      (result.configured ? 'Connected. Last synced: ' + (result.last_sync || 'waiting') : 'No calendar connected.');
+    document.getElementById('feed-remove').hidden = !result.configured;
+    render();
+  }
+  document.getElementById('feed-form').onsubmit = async event => {
+    event.preventDefault();
+    const status = document.getElementById('feed-status'); status.textContent = 'Connecting…';
+    try {
+      const response = await fetch('/api/calendar', {method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({url: document.getElementById('feed-url').value})});
+      if (!response.ok) throw Error();
+      document.getElementById('feed-url').value = '';
+      await loadEvents();
+    } catch { status.textContent = 'Could not connect. Use the private iCal address from Google Calendar.'; }
+  };
+  document.getElementById('feed-remove').onclick = async () => {
+    try {
+      const response = await fetch('/api/calendar', {method: 'DELETE'});
+      if (!response.ok) throw Error();
+      await loadEvents();
+    } catch { document.getElementById('feed-status').textContent = 'Could not disconnect calendar.'; }
+  };
+  async function loadProjects() {
+    const response = await fetch('/api/projects');
+    if (!response.ok) throw Error();
+    projects = await response.json();
+    const list = document.getElementById('projects');
+    list.replaceChildren();
+    for (const project of projects) {
+      const row = document.createElement('li');
+      const pill = document.createElement('button'); pill.type = 'button'; pill.className = 'project-pill';
+      pill.textContent = project.name;
+      pill.setAttribute('aria-label', 'Remove ' + project.name);
+      pill.onclick = async () => {
+        try {
+          const response = await fetch('/api/projects/' + project.id, {method: 'DELETE'});
+          if (!response.ok) throw Error();
+          await loadProjects();
+          document.getElementById('project-status').textContent = 'Removed. Kindle refreshes within one minute.';
+        } catch { document.getElementById('project-status').textContent = 'Could not remove project.'; }
+      };
+      row.append(pill); list.appendChild(row);
+    }
+  }
+  document.getElementById('project-form').onsubmit = async event => {
+    event.preventDefault();
+    const status = document.getElementById('project-status'); status.textContent = '';
+    try {
+      const response = await fetch('/api/projects', {method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({name: document.getElementById('project-name').value})});
+      if (!response.ok) throw Error();
+      document.getElementById('project-name').value = '';
+      await loadProjects();
+      status.textContent = 'Added. Kindle refreshes within one minute.';
+    } catch { status.textContent = 'Could not add project. Use a unique name, up to 30 characters; maximum 9.'; }
+  };
+  document.getElementById('prev').onclick = () => { view.setMonth(view.getMonth() - 1); selected = new Date(view); loadEvents(); };
+  document.getElementById('next').onclick = () => { view.setMonth(view.getMonth() + 1); selected = new Date(view); loadEvents(); };
+  document.getElementById('current').onclick = () => { view = new Date(now.getFullYear(), now.getMonth(), 1); selected = now; loadEvents(); };
+  let touchStart;
+  const calendar = document.querySelector('.calendar');
+  calendar.addEventListener('touchstart', event => {
+    touchStart = [event.changedTouches[0].clientX, event.changedTouches[0].clientY];
+  }, {passive: true});
+  calendar.addEventListener('touchend', event => {
+    if (!touchStart) return;
+    const dx = event.changedTouches[0].clientX - touchStart[0];
+    const dy = event.changedTouches[0].clientY - touchStart[1];
+    if (Math.abs(dx) > 80 && Math.abs(dx) > Math.abs(dy)) {
+      view.setMonth(view.getMonth() + (dx < 0 ? 1 : -1));
+      selected = new Date(view); loadEvents();
+    }
+    touchStart = null;
+  }, {passive: true});
+  loadProjects().catch(() => { document.getElementById('project-status').textContent = 'Could not load projects.'; });
+  loadEvents().catch(() => { document.getElementById('feed-status').textContent = 'Could not load Google Calendar.'; });
+</script>
+</body>
+</html>
